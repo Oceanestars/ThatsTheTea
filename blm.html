@@ -39,8 +39,8 @@ body, html {
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("black-lives-matter-protest.jpg");
-  height: 70%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("website-img/black-lives-matter-protest.jpg");
+  height: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -90,13 +90,13 @@ body, html {
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- <link rel = "stylesheet" type = "text/css" href = "single-issue.css"> -->
-    <title>Home Page</title>
+    <title>BLM Movement </title>
 </head>
 <body>
     <!-- nav bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
-            <img src="teacup-icon.png" alt="That's The Tea" height="75">
+            <img src="website-img/teacup-icon.png" alt="That's The Tea" height="75">
         </a>
         <h1 class="navbar-text" style="font-family: 'Dancing Script', cursive; color:#765D69">That's The Tea</h1>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -115,17 +115,17 @@ body, html {
                       Social Issues
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Black Lives Matter</a>
-                      <a class="dropdown-item" href="#">Suicide Prevention</a>
-                      <a class="dropdown-item" href="#">LGBTQ+</a>
-                      <a class="dropdown-item" href="#">Anti-Racism</a>
+                      <a class="dropdown-item" href="blm.html">Black Lives Matter</a>
+                      <a class="dropdown-item" href="suicide.html">Suicide Prevention</a>
+                      <a class="dropdown-item" href="identities.html">LGBTQ+</a>
+                      <a class="dropdown-item" href="anti-racism.html">Anti-Racism</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="homePage.html">Organizations</a>
+                    <a class="nav-link" href="homepage.html">Organizations</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="homePage.html">Newsletter</a>
+                    <a class="nav-link" href="homepage.html">Newsletter</a>
                 </li>
             </ul>
         </div>
@@ -134,44 +134,12 @@ body, html {
     <div class="hero-image">
         <div class="hero-text">
           <h1 style="font-size:50px"> Black Lives Matter Movement</h1>
+          <p> Description about BLM Movement </p>
           <a target="_blank" class="btn btn-info" href="https://blacklivesmatter.com/" role="button">Official BLM Website</a>
         </div>
     </div>
     <br>
     <br>
-    <br>
-    <button class="collapsible"> <i class="material-icons" style="font-size:26px">public</i> News </button>
-    <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <button class="collapsible"> <i class="material-icons" style="font-size:26px">insert_drive_file</i>Resources </button>
-    <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <button class="collapsible"> <i class="material-icons" style="font-size:26px">people</i> Discussion Board </button>
-    <div class="content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-
-    <script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight){
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        }
-      });
-    }
-    </script>
-    <br>
-    <div class="container">
-    </div>
     <br>
 </body>
 </html>

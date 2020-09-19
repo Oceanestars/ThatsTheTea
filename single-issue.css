@@ -1,42 +1,9 @@
 body {
     height: 100%;
-    background-color: lightblue;
+    background-color: white;
     background-repeat:no-repeat;
     background-size:cover;
 }
-
-/* Add a black background color to the top navigation */
-.topnav {
-  margin: 0 0 0 0;
-  background-color: #333;
-  font-family: 'Varela round, serif';
-  overflow: hidden;
-  width: 100%;
-
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
 
 body, html {
   height: 100%;
@@ -141,4 +108,28 @@ body, html {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
+}
+
+#module {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+#module #collapseExample.collapse:not(.show) {
+  display: block;
+  height: 3rem;
+  overflow: hidden;
+}
+
+#module #collapseExample.collapsing {
+  height: 3rem;
+}
+
+#module a.collapsed::after {
+  content: '+ Show More';
+}
+
+#module a:not(.collapsed)::after {
+  content: '- Show Less';
 }
