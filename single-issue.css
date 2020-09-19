@@ -1,7 +1,6 @@
 body {
     height: 100%;
-    font-family: 'Chalet';
-    background-color: #eab6ab;
+    background-color: lightblue;
     background-repeat:no-repeat;
     background-size:cover;
 }
@@ -38,10 +37,6 @@ body {
   color: white;
 }
 
-.jumbotron{
-    background-color:white !important;
-    text-align:center;
-}
 
 body, html {
   height: 100%;
