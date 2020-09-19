@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset = "utf-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
+        <meta name = "viewpoint" content = "width = device-width, initial-scale=1">
+
+        <title> Anti-racism </title>
+
+        <link href = "https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel = "stylesheet" href= "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel = "stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel = "stylesheet" type = "text/css" href = "single-issue.css">
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></<script>
+        <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+        <!--script type = "text/javascript" src = "./browserPage.js"></script-->
+
+
+    </head>
+
+
+    <body>
+
+          <div class="topnav">
+
+            <img src="./tinner-logo4.png" style="float:left" alt="Tinner Logo" width="170" height="52">
+
+            <a style="float:left" href="#home">That's the Tea</a>
+
+            <a style="float:right" class="active" href="#home">Subscribe</a>
+
+            <a style="float:right" href="#home">Organizations</a>
+
+            <a style="float:right" href="#news">Social Issues</a>
+
+            <a style="float:right" href="#contact">About Us</a>
+
+            <a style="float:right" href="#about">Home</a>
+
+          </div>
+
+          <div class="hero-image4">
+            <div class="hero-text">
+              <h1 style="font-size:50px"> Anti-racism </h1>
+              <a target="_blank" class="btn btn-info" href="https://lgbt.foundation/" role="button">Official Website</a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <button class="collapsible"> <i class="material-icons" style="font-size:26px">public</i> News </button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button class="collapsible"> <i class="material-icons" style="font-size:26px">insert_drive_file</i>
+ Resources </button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button class="collapsible"> <i class="material-icons" style="font-size:26px">people</i> Discussion Board </button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          });
+        }
+        </script>
+
+    </body>
+</html>
