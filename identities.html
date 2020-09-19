@@ -1,89 +1,177 @@
 <!DOCTYPE html>
+<html lang="en">
+<style>
+nav {
+   text-align: center;
+   padding: 10px 0;
+}
 
-<html>
+nav ul{
+  list-style: none;
+  margin: 0 2px;
+  padding: 0;
+}
 
-    <head>
+nav li {
+   display: inline-block;
+   padding: 10px 10px;
+}
 
-        <meta charset = "utf-8">
-        <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
-        <meta name = "viewpoint" content = "width = device-width, initial-scale=1">
+nav a {
+  font-weight: normal;
+  padding: 20px 5px;
+  font-size: 1.2em;
+}
 
-        <title> LGBTQ+ Awareness </title>
+.navbar-text {
+    position: left;
+    left: 0;
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+    font-color: #765D69;
+}
 
-        <link href = "https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel = "stylesheet" href= "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel = "stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel = "stylesheet" type = "text/css" href = "single-issue.css">
-        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></<script>
-        <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("lgbtq-flag.jpg");
+  height: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
 
-        <!--script type = "text/javascript" src = "./browserPage.js"></script-->
+</style>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
+    <!-- google font API -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Libre+Baskerville&display=swap" rel="stylesheet">
 
-    </head>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
-    <body>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-          <div class="topnav">
-
-            <img src="./tinner-logo4.png" style="float:left" alt="Tinner Logo" width="170" height="52">
-
-            <a style="float:left" href="#home">That's the Tea</a>
-
-            <a style="float:right" class="active" href="#home">Subscribe</a>
-
-            <a style="float:right" href="#home">Organizations</a>
-
-            <a style="float:right" href="#news">Social Issues</a>
-
-            <a style="float:right" href="#contact">About Us</a>
-
-            <a style="float:right" href="#about">Home</a>
-
-          </div>
-
-          <div class="hero-image2">
-            <div class="hero-text">
-              <h1 style="font-size:50px"> LGBTQ+ </h1>
-              <a target="_blank" class="btn btn-info" href="https://lgbt.foundation/" role="button">Official Website</a>
-            </div>
+    <!-- <link rel = "stylesheet" type = "text/css" href = "single-issue.css"> -->
+    <title>Home Page</title>
+</head>
+<body>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="teacup-icon.png" alt="That's The Tea" height="75">
+        </a>
+        <h1 class="navbar-text" style="font-family: 'Dancing Script', cursive; color:#765D69">That's The Tea</h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="homePage.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="homePage.html">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Social Issues
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Black Lives Matter</a>
+                      <a class="dropdown-item" href="#">Suicide Prevention</a>
+                      <a class="dropdown-item" href="#">LGBTQ+</a>
+                      <a class="dropdown-item" href="#">Anti-Racism</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="homePage.html">Organizations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="homePage.html">Newsletter</a>
+                </li>
+            </ul>
         </div>
-        <br>
-        <br>
-        <br>
-        <button class="collapsible"> <i class="material-icons" style="font-size:26px">public</i> News </button>
-        <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </nav>
+    <!-- body information -->
+    <div class="hero-image">
+        <div class="hero-text">
+          <h1 style="font-size:50px">LGBTQ+</h1>
+          <a target="_blank" class="btn btn-info" href="https://blacklivesmatter.com/" role="button">Official BLM Website</a>
         </div>
-        <button class="collapsible"> <i class="material-icons" style="font-size:26px">insert_drive_file</i>
- Resources </button>
-        <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <button class="collapsible"> <i class="material-icons" style="font-size:26px">people</i> Discussion Board </button>
-        <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <button class="collapsible"> <i class="material-icons" style="font-size:26px">public</i> News </button>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <button class="collapsible"> <i class="material-icons" style="font-size:26px">insert_drive_file</i>Resources </button>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <button class="collapsible"> <i class="material-icons" style="font-size:26px">people</i> Discussion Board </button>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
 
-        <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
 
-        for (i = 0; i < coll.length; i++) {
-          coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.maxHeight){
-              content.style.maxHeight = null;
-            } else {
-              content.style.maxHeight = content.scrollHeight + "px";
-            }
-          });
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
         }
-        </script>
-
-    </body>
+      });
+    }
+    </script>
+    <br>
+    <div class="container">
+    </div>
+    <br>
+</body>
 </html>
