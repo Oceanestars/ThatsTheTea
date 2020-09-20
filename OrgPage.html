@@ -31,6 +31,75 @@ nav a {
     font-weight: bold;
     font-color: #765D69;
 }
+.row {
+
+  height: 200px;
+  padding-left: 10%;
+  padding-right: 10%;
+
+}
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: grey;
+  color: black;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
 </style>
 <head>
     <meta charset="utf-8">
@@ -57,9 +126,10 @@ nav a {
 <label for='search-btn'>Show search bar</label>
 <input id='search-bar' type='text' placeholder='Search...'/> -->
     <!-- nav bar -->
+
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="homepage.html">
-      <img src="teacup-icon.png" alt="That's The Tea" height="75">
+      <img src="website-img/teacup-icon.png" alt="That's The Tea" height="75">
     </a>
     <h1 class="navbar-text" style="font-family: 'Dancing Script', cursive; color:#765D69">That's The Tea</h1>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -94,38 +164,89 @@ nav a {
     </div>
   </nav>
 
+  <section class="home-newsletter">
+    <div class="container">
+    <div class="row">
+    <div class="col-sm-12">
+      <div class="single">
+        <br>
+        <h2 style="text-align:center">University Organization</h2>
+        <br>
+          <div class="input-group">
+             <input type="email" class="form-control" placeholder="Enter your search">
+             <span class="input-group-btn">
+             <button class="btn btn-light" type="submit">Search</button>
+             </span>
+          </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    </section>
     <div class="row">
         <div class="column">
-          <div class="card">
-            <img src="img/placeholder2.jpg" width="300" height="200">
+          <a href="https://www.colorado.edu/blackstudentalliance/" target="_blank"><div class="card">
+            <img src="website-img/blackstudentalliance.jpg" width="300" height="200">
             <div class="text-block">
-            <h4>Name of Org</h4>
-            <p>City</p>
+            <h4>Black Student Alliance</h4>
+            <p>Boulder, CO</p>
             </div>
-          </div>
+          </div></a>
         </div>
       
         <div class="column">
-            <div class="card">
-              <img src="img/placeholder2.jpg" width="300" height="200">
+          <a href="https://projectnur.org/?fbclid=IwAR0W_FX7yvUAepfV1UeCgLWMuGftJWgqJRFaRscZhFrfvpXLxGn-Xxj5FX0" target="_blank"><div class="card">
+              <img src="website-img/projectnur1.jpg" width="300" height="200">
               <div class="text-block">
-              <h4>Name of Org</h4>
-              <p>City</p>
+              <h4>Project Nur</h4>
+              <p>Boulder, CO</p>
               </div>
-            </div>
+            </div></a>
           </div>
       
           <div class="column">
-            <div class="card">
-              <img src="img/placeholder2.jpg" width="300" height="200">
+            <a href="https://www.colorado.edu/studentgroup/ostem/become-member" target="_blank"><div class="card">
+              <img src="website-img/ostem.jpg" width="300" height="200">
               <div class="text-block">
-              <h4>Name of Org</h4>
-              <p>City</p>
+              <h4>Ostem</h4>
+              <p>Boulder, CO</p>
               </div>
-            </div>
+            </div></a>
           </div>
       </div>
+<div class="row">
 
+<button class="open-button" onclick="openForm()">Add your Organization</button>
+
+  <div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <h5>Organization Information</h5>
+  
+      <label for="Name"><b>Name</b></label>
+      <input type="text" placeholder="Enter Name" name="Name" required>
+  
+      <label for="psw"><b>University</b></label>
+      <input type="password" placeholder="Enter University" name="psw" required>
+
+      <button type="button" class="btn btn-light" onclick="closeForm()">Submit</button>
+    </form>
+  </div>
+</div>
+  <br>
+
+
+</div>
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+
+</div>
 
  <!-- <script src="assets/bootstrap/js/bootstrap.min.js"></script> -->
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
